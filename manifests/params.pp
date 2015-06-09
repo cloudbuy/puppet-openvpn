@@ -22,6 +22,11 @@ class openvpn::params {
       $service = 'openvpn'
       $multiservice = false
     }
+    'OpenBSD': {
+      $package = 'openvpn'
+      $service = 'openvpn'
+      $multiservice = false
+    }
     default: {
       # Bail out, since work will be needed
       fail("Unsupported operatingsystem ${::operatingsystem}.")
