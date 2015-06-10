@@ -25,7 +25,7 @@ class openvpn::params {
     'OpenBSD': {
       $package = 'openvpn'
       $service = 'openvpn'
-      $multiservice = false
+      $multiservice = true
     }
     default: {
       # Bail out, since work will be needed
